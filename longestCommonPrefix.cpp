@@ -6,11 +6,10 @@ using namespace std;
 
 void longestCommonPrefix(vector<string>& strs) {
     string out = "";  
+    int c = 0;
 
-    for (int i = 0; i<strs.size();i++){
-        cout<<strs[i]<<" ";
-    }      
-    // cout<<endl;
+    while(c!=)
+
 }
 
 
