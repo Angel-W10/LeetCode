@@ -7,9 +7,6 @@ using namespace std;
 void longestCommonPrefix(vector<string>& strs) {
     string out = "";  
     int c = 0;
-
-    while(c!=)
-
 }
 
 
