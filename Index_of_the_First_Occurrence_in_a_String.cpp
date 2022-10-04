@@ -23,7 +23,7 @@ int strStr(string haystack, string needle) {
             n=0;
         }
     }
-    if (n=needle.length()){
+    if (n==needle.length()){
         return h-n;
     }
     return -1;
@@ -35,6 +35,5 @@ int main(){
     string haystack = "leetcode", needle = "leeto";
     int out = strStr(haystack, needle);
     cout<<"out = "<<out<<endl;
-
     return 0;
 }
