@@ -14,7 +14,7 @@
 
 using namespace std;
 
-vector<int> removeDuplicates(vector<int>& nums) {
+int removeDuplicates(vector<int>& nums) {
     int c = 0;
     int val = nums[0];
         
@@ -39,20 +39,14 @@ vector<int> removeDuplicates(vector<int>& nums) {
             c++;           
         }
     }
-    // int k=0;
-    // for(int i=0;i<len;i++){
-    //     if(nums[i]!=-1){
-    //         k++;
-    //     }
-    // }
-    // for(int i=0;i<len;i++){
-    //     cout<<nums[i]<<" ";
-    // }
-    // cout<<endl;
+    int k=0;
+    for(int i=0;i<len;i++){
+        if(nums[i]!=-1){
+            k++;
+        }
+    }
 
-
-    // return k;    
-    return nums;
+    return k;    
         
 }
 
@@ -73,12 +67,9 @@ int main(){
 
     // cout<<endl;
 
-    vector<int> new_arr = removeDuplicates(nums);
+    int k = removeDuplicates(nums);
 
-    for (int i =0 ; i < new_arr.size(); i++){
-        cout<<new_arr[i]<<" ";
-    }
-    cout<<endl;
+    cout<<k<<endl;
 
     return 0;
 }
