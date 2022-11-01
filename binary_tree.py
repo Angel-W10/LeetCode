@@ -1,86 +1,87 @@
-'''class Node(object):
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
+# class Node(object):
+#     def __init__(self, value):
+#         self.value = value
+#         self.left = None
+#         self.right = None
 
-class BinaryTree(object):
-    def __init__(self, root):
-        self.root = Node(root)
+# class BinaryTree(object):
+#     def __init__(self, root):
+#         self.root = Node(root)
 
-    def search(self, find_val):
-        """Return True if the value
-        is in the tree, return
-        False otherwise."""
-        if(self.root):
-            start = self.root
+#     def search(self, find_val):
+#         """Return True if the value
+#         is in the tree, return
+#         False otherwise."""
+#         if(self.root):
+#             start = self.root
             
-            return self.preorder_search(start, find_val)
+#             return self.preorder_search(start, find_val)
         
-        return False
+#         return False
 
-    def print_tree(self):
-        """Print out all tree nodes
-        as they are visited in
-        a pre-order traversal."""
-        if(self.root):
-            start = self.root
-            trav = []
-            return self.preorder_print(start, trav)
+#     def print_tree(self):
+#         """Print out all tree nodes
+#         as they are visited in
+#         a pre-order traversal."""
+#         if(self.root):
+#             start = self.root
+#             trav = []
+#             return self.preorder_print(start, trav)
         
-        return ""
+#         return ""
 
-    def preorder_search(self, start, find_val):
-        """Helper method - use this to create a 
-        recursive search solution."""
-        temp = start
-        if(temp.value==find_val):
-            return True
-        if(temp.left):
-            if(temp.left.value==find_val):
-                return True
-            else:
-                return self.preorder_search(temp.left, find_val)
+#     def preorder_search(self, start, find_val):
+#         """Helper method - use this to create a 
+#         recursive search solution."""
+#         temp = start
+#         if(temp.value==find_val):
+#             return True
+#         if(temp.left):
+#             if(temp.left.value==find_val):
+#                 return True
+#             else:
+#                 return self.preorder_search(temp.left, find_val)
                 
-        if(temp.right):
-            if(temp.right.value==find_val):
-                return True
-            else:
-                return self.preorder_search(temp.right, find_val)
+#         if(temp.right):
+#             if(temp.right.value==find_val):
+#                 return True
+#             else:
+#                 return self.preorder_search(temp.right, find_val)
         
-        return False
+#         return False
 
-    def preorder_print(self, start, traversal):
-        """Helper method - use this to create a 
-        recursive print solution."""
-        temp = start
-        traversal.append(temp.value)
+#     def preorder_print(self, start, traversal):
+#         """Helper method - use this to create a 
+#         recursive print solution."""
+#         temp = start
+#         traversal.append(temp.value)
         
-        if(temp.left):
-            self.preorder_print(temp.left, traversal)
+#         if(temp.left):
+#             self.preorder_print(temp.left, traversal)
             
-        if(temp.right):
-            self.preorder_print(temp.right, traversal)
+#         if(temp.right):
+#             self.preorder_print(temp.right, traversal)
         
-        return traversal
+#         return traversal
 
 
-# Set up tree
-tree = BinaryTree(1)
-tree.root.left = Node(2)
-tree.root.right = Node(3)
-tree.root.left.left = Node(4)
-tree.root.left.right = Node(5)
+# # Set up tree
+# if __name__ == "__main__":
+#     tree = BinaryTree(1)
+#     tree.root.left = Node(2)
+#     tree.root.right = Node(3)
+#     tree.root.left.left = Node(4)
+#     tree.root.left.right = Node(5)
 
-# Test search
-# Should be True
-print tree.search(4)
-# Should be False
-print tree.search(6)
+#     # Test search
+#     # Should be True
+#     print (tree.search(4))
+#     # Should be False
+#     print (tree.search(6))
 
-# Test print_tree
-# Should be 1-2-4-5-3
-print tree.print_tree()'''
+#     # Test print_tree
+#     # Should be 1-2-4-5-3
+#     print (tree.print_tree())
 
 
 
