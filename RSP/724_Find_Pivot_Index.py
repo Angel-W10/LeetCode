@@ -14,6 +14,7 @@ def pivotIndex(nums: list[int]) -> int:
     #     if lsum == psum/2:
     #         pivot = i
     # return pivot
+
     pivot = 0
     lsum = 0
     count = 0
